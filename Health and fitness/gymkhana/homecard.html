@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<style> 
+.wrapper{
+    position: relative;
+    top: 5%;
+    margin-left: 12%;
+}
+  .card{
+ display: inline-block;
+ width:27%;
+height: 380px;
+border-radius: 15px;
+border-bottom-right-radius: 80px;
+background-color: lavenderblush;
+ margin: 20px;
+ background-image:url("images/beginner.jpg");
+ background-repeat: no-repeat;
+ background-size: 100% 100%;
+ 
+ 
+}
+
+.card h1{
+    position: relative;
+   top:75%;
+   left: 25%;
+   font-family: "Times new roman", Times, serif;
+   color: white;
+  text-shadow: 2px 2px 4px darkblue;
+}
+
+.card:hover{
+    opacity:0.75;
+}
+.card:hover h1 {
+    text-shadow: 3px 2px 4px darkblue;
+ }
+#beginner{
+    background-image:url("images/beginner.jpg");
+ background-repeat: no-repeat;
+ background-size: 100% 100%;
+}
+ #intermediate{
+    background-image:url("images/intermediate.jpg");
+ background-repeat: no-repeat;
+ background-size: 100% 100%;
+ }
+ #intense{
+    background-image:url("images/intense.jpg");
+ background-repeat: no-repeat;
+ background-size: 100% 100%;
+ }
+</style>
+</head>
+
+<body>
+ <div class= "wrapper">
+ 
+    <a href="beginner.html"> <div class= "card" id="beginner"><h1>BEGINNER</h1></div>   </a>
+ 
+
+    <a href= "intermediate.html"> <div class= "card" id ="intermediate"><h1>INTERMEDIATE</h1></div> </a>
+    <a href= "advance.html"> <div class= "card" id = "intense"><h1>ADVANCE</h1></div> </a>
+ </div>
+ </body>
+ </html>

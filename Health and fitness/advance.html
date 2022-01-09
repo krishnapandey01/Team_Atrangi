@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<style> 
+ body {
+  font-family: 'lato', sans-serif;
+  background-color: rgb(238, 238, 230);
+}
+.banner img{
+    width:60%;
+    height: 55%;
+    margin-left: 20%;
+}
+.container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+h2 {
+  font-size: 26px;
+  margin: 20px 0;
+  text-align: center;
+  
+}
+
+.table 
+  li {
+    border-radius: 3px;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    font-size: 26px;
+  }
+  .table-header {
+    background-color: #95A5A6;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  .table-row {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+  }
+  .col-1 {
+    flex-basis: 5%;
+  }
+  .col-2 {
+    flex-basis: 45%;
+  }
+  .col-3 {
+    flex-basis: 25%;
+  }
+  .col-4 {
+    flex-basis: 25%;
+  }
+  
+  @media all and (max-width: 767px) {
+    .table-header {
+      display: none;
+    }
+    .table-row{
+      
+    }
+    li {
+      display: block;
+    }
+    .col {
+      
+      flex-basis: 100%;
+      
+    }
+    .col {
+      display: flex;
+      padding: 10px 0;
+       }
+}
+
+h1 ,h2{
+
+    color: Red;
+    text-align: center;
+    font-size: 45px;
+    text-decoration: underline;
+}
+
+h3
+{
+    color: darkblue;
+    margin-left: 8%;
+    text-decoration: underline;
+    font-size: 40px;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin-left: 8%;
+    margin-right:8%;
+
+}
+</style>
+<body>
+
+<div class= "banner">
+<img src ="https://www.xlcenter.it/wp-content/uploads/2019/04/class-2-1-1.jpg" />
+</div>
+
+<h1>
+    ADVANCE WORKOUT PLAN
+</h1>
+
+<div>
+    <p>Have you finished the beginner workout plan . Well done if you have and now you are ready for the next step.  The middle level has never been looked at much because people often refer to themselves as beginners or experienced bodybuilders. This makes it tough for intermediate bodybuilders to find a routine that suits their own individual experience. </p>
+
+    <h2>Workout Description</h2>
+
+    <h3>LOWER BODY(Day 1 & 4)</h3>
+   <p> Warm Up: Before each day of exercise, walk on a treadmill at a slight incline for 10 minutes. (Treadmill can be replaced with your choice of other zero impact cardio.)</p>
+   
+    <div class="container">
+   
+        <ul class="table">
+          <li class="table-header">
+            <div class="col col-1"> </div>
+            <div class="col col-2">Exercise</div>
+            <div class="col col-3">Frequency</div>
+            
+          </li>
+          <li class="table-row">
+            <div class="col col-1" data-label="srno">1</div>
+            <div class="col col-2" data-label="exercise">Squat</div>
+            <div class="col col-3" data-label="freq">	3 sets, 8-10 reps</div>
+            
+          </li>
+          <li class="table-row">
+            <div class="col col-1" data-label="srno">2</div>
+            <div class="col col-2" data-label="exercise">Leg Extensions</div>
+            <div class="col col-3" data-label="freq">3 sets, 8-10 reps</div>
+             
+          </li>
+          <li class="table-row">
+            <div class="col col-1" data-label="srno">3</div>
+            <div class="col col-2" data-label="exercise">Dumbbell Stiff Legged Deadlift</div>
+            <div class="col col-3" data-label="freq">3 sets, 10-12 reps each</div>
+           
+          </li>
+          <li class="table-row">
+            <div class="col col-1" data-label="srno">3</div>
+            <div class="col col-2" data-label="exercise">Box Step Ups with Dumbbells</div>
+            <div class="col col-3" data-label="freq">3 sets, 10 Reps</div>
+             
+          </li>
+          
+             <li class="table-row">
+            <div class="col col-1" data-label="srno">4</div>
+            <div class="col col-2" data-label="exercise">Walking Lunges</div>
+            <div class="col col-3" data-label="freq">2 sets, 15-20 lunges</div>
+             
+          </li>
+        </ul>
+      </div>
+    
+      <h3>UPPER BODY(Day 2 & 5)</h3>
+      <div class="container">
+   
+        <ul class="table">
+          <li class="table-header">
+            <div class="col col-1"> </div>
+            <div class="col col-2">Exercise</div>
+            <div class="col col-3">Frequency</div>
+            
+          </li>
+          <li class="table-row">
+            <div class="col col-1" data-label="srno">1</div>
+            <div class="col col-2" data-label="exercise">Dumbbell Press At A 45-Degree Incline</div>
+            <div class="col col-3" data-label="freq">	3 sets, 8-10 reps</div>
+            
+          </li>
+          <li class="table-row">
+            <div class="col col-1" data-label="srno">2</div>
+            <div class="col col-2" data-label="exercise">Barbell Row</div>
+            <div class="col col-3" data-label="freq">3 sets, 8-10 reps</div>
+             
+          </li>
+          <li class="table-row">
+            <div class="col col-1" data-label="srno">3</div>
+            <div class="col col-2" data-label="exercise">Dumbbell Lateral Raise</div>
+            <div class="col col-3" data-label="freq">3 sets, 10-12 reps each</div>
+           
+          </li>
+          <li class="table-row">
+            <div class="col col-1" data-label="srno">3</div>
+            <div class="col col-2" data-label="exercise">Wide Grip Cable Pulldown</div>
+            <div class="col col-3" data-label="freq">3 sets, 10 Reps</div>
+             
+          </li>
+          
+             <li class="table-row">
+            <div class="col col-1" data-label="srno">4</div>
+            <div class="col col-2" data-label="exercise">Dumbbell Hammer Curl</div>
+            <div class="col col-3" data-label="freq">	3 sets, 8-10 reps</div>
+             
+          </li>
+
+          <li class="table-row">
+            <div class="col col-1" data-label="srno">5</div>
+            <div class="col col-2" data-label="exercise">Dumbbell Triceps Extension</div>
+            <div class="col col-3" data-label="freq">	3 sets, 8-10 reps</div>
+        </ul>
+      </div>
+    
+    
+      <h3>CARDIO (DAY 6)</h3>
+    <p>Workout on Treadmill for </p>
+    
+      <p>This should be done 2 times a week, but you may want to add in steady state cardio on 2-3 additional days.Modify the plan when necessary, create your own similar workout or take a look at other exercise articles for ideas on how to stay motivated and moving!</p>
+<h3>Rest (Day 7)</h3>
+   <p> Take off a day to allow your body to fully recover before starting off a new week.</p>
+    </div>
+ </body>
+ </html>

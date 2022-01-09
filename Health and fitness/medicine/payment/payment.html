@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="payment.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+      integrity="undefined"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      #navbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+      #logo {
+        margin: 8px 8px;
+      }
+      #logo img {
+        margin: 3px 6px;
+        height: 40px;
+        border-radius: 5px;
+      }
+      #home img {
+        margin-bottom: 30px;
+      }
+      #navbar ul {
+        display: flex;
+      }
+      #navbar::before {
+        content: "";
+        background-color: rgb(0, 0, 0);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 1;
+      }
+      #navbar ul li {
+        list-style: none;
+        font-size: 1.3rem;
+      }
+      #navbar ul li a {
+        color: white;
+        display: block;
+        list-style: none;
+        font-size: 1.3rem;
+        padding: 3px 10px;
+        margin: 10px;
+        border-radius: 7px;
+        text-decoration: none;
+      }
+      #navbar ul li a:hover {
+        color: black;
+        background-color: white;
+      }
+      .active {
+        color: rgb(7, 1, 1);
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div id="logo">
+        <img src="logo.jpeg" alt="ADM SERVICES" />
+      </div>
+
+      <ul>
+        <li class="item active"><a href="index.html">HOME</a></li>
+
+        <li class="item">
+          <a href="precaution.html" target="_blank">PRECAUTIONS</a>
+        </li>
+        <li class="item">
+          <a href="pharmacy.html" target="_blank">MEDICINES</a>
+        </li>
+        <li class="item">
+          <a href="ContactUs.html" target="_blank">CONTACT US</a>
+        </li>
+        <li class="items" align-items="flex-end">
+          <a href="payment.html"
+            ><span
+              ><img
+                src="shop.png"
+                width="18px"
+                height="18px"
+                style="filter: invert()" /></span
+            >&nbspSHOPING</a
+          >
+        </li>
+        <li class="item-right">
+          <a href="login-signup.html" target="_blank">LOGIN/SIGN-UP</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <h2><marquee>PAYMENT FORM</marquee></h2>
+      <form method="POST">
+        <h4>ACCOUNT</h4>
+        <div class="input-group">
+          <div class="input-box">
+            <input type="text" placeholder="FIRST NAME" required class="name" />
+          </div>
+          <div class="input-box">
+            <input type="text" placeholder="LAST NAME" required class="name" />
+          </div>
+        </div>
+        <div class="input-group">
+          <div class="input-box">
+            <input
+              type="email"
+              placeholder="EMAIL ADDRESS"
+              required
+              class="name"
+            />
+          </div>
+        </div>
+        <div class="input-group">
+          <div class="input-box">
+            <h4>DATE OF BIRTH</h4>
+            <input type="date" placeholder="DD/MM/YYYY" required class="name" />
+          </div>
+        </div>
+
+        <div class="input-group">
+          <div class="input-box">
+            <h4>PAYMENT MOD</h4>
+            <input type="radio" name="pay" id="bc1" checked class="radio" />
+            <label for="bc1"><span></span>CREDIT CARD</label>
+            <input type="radio" name="pay" id="bc2" checked class="radio" />
+            <label for="bc2"><span></span>CASH ON DELIVERY</label>
+          </div>
+        </div>
+        <div class="input-group">
+          <div class="input-box">
+            <input
+              type="tel"
+              placeholder=" CARD NUMBER"
+              required
+              class="name"
+            />
+          </div>
+        </div>
+
+        <div class="input-group">
+          <div class="input-box">
+            <input type="tel" placeholder="CARD CVV" required class="name" />
+          </div>
+          <div class="input-box">
+            <input
+              type="date"
+              placeholder="Card expiry"
+              required
+              class="name"
+              title="CARD EXPIRY DATE"
+            />
+          </div>
+        </div>
+        <div class="input-group">
+          <div class="input-box">
+            <center>
+              <button type="submit" class="btn" onclick="myFunction()">PAY NOW</button>
+            </center>
+          </div>
+        </div>
+      </form>
+    </div>
+    <button onclick="myFunction()">PAY NOW</button>
+
+    <script>
+      
+      function myFunction() {
+var userInput=window.prompt("ENTER YOUR 6 DIGIT OTP SENT TO YOUR PHONE");
+document.write("Payment Sucessful! Thank you for buying with us.");
+}
+myFunction();
+      </script>
+  </body>
+</html>
