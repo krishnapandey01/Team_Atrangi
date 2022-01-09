@@ -646,7 +646,7 @@ top:-120%;
                 <ul>
                     <li><a href="#" >Home</a></li>
                     <li><a href="medicine/medicine.html">Drugs & Medicine</a></li>
-                    <li><a href="ecart/ecart.html">E-cart</a></li>
+                    <li><a href="ecart/shop.html">E-cart</a></li>
                     <li>
                     <div class="dropdown">
                     <a class="dropbtn">GymKhana</a>
@@ -696,7 +696,7 @@ top:-120%;
             <div class="content">
                 <h3>E-cart</h3>
                 <p>This section is for shopping through E-cart.</p>
-                <a href="India.php" class="btn">Explore</a>
+                <a href="ecart/shop.html" class="btn">Explore</a>
             </div>
         </div>
      
@@ -730,7 +730,7 @@ top:-120%;
             <div class="content">
                 <h3>Symptoms Checker</h3>
                 <p>This section will take input from user for their medical check-up.</p>
-                <a href="login/index.php" class="btn">Explore</a>
+                <a href="login/indexf.php" class="btn">Explore</a>
             </div>
         </div>
         <div class="box">

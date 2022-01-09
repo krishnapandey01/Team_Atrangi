@@ -1,0 +1,233 @@
+ 
+h1{
+  color: rgb(21, 10, 105);
+  font-size: 33px;
+  margin-top: 10%;
+ text-align: center;
+ text-decoration: underline;
+}
+ 
+ul li:hover{
+    background-color:orange;
+    /* animation-name: vibrate;
+    animation-duration: 2s; */
+}
+
+ul li a:hover{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: COURIER;
+    font-size: 20px;
+    color: blue;
+    /* background-color: lime; */
+}
+
+.grid-item {
+          
+          width: 400px; 
+   /* border : 0px solid #ccc;
+    
+    margin-top:20px;
+    /* margin-right:10px; */
+}
+
+.grid-item img{
+    width : 75%;
+    height :75%; 
+    /* background-size: contain; */
+  align-items: left;
+}
+
+.grid-item h2{
+    pointer-events: none;
+    /* display:none; */
+    position:relative;
+    font-family: 'Times New Roman', Times, serif ;
+    width:270px;
+    font-size:22px;
+    color : rgb(14, 12, 12);
+    /* margin-top: -203px; */
+    text-align: center; 
+  
+}
+#pop-wrapper {
+    margin-top: 200px;
+    display:grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;;
+    /* grid-template-columns:1fr 1fr 1fr; */
+    justify-items: center;
+}
+
+.grid-item .modal-content img{
+    pointer-events: none;
+    
+}
+
+
+/*******************************/
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;  
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color:  #FBF8BE;
+    margin: 8% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 45%;
+    height: auto;
+    /* border: 2px solid black; */
+    /* border-radius: 10px; */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: black;
+    float: right;
+    font-size: 33px;
+    font-weight: bold;
+    /* background-color: red; */
+    /* border-radius :40px; */
+    width:35px;
+    height:37px;
+    text-align:center;
+  }
+ 
+
+  .close:hover,
+  .close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+  /* ulta nai?? bg black krdo fix*/
+h3.item-name {
+    text-align: center;
+    font-size: 35px;
+    /* color:#900C3F; */
+    color: #02055A;
+    font-weight: lighter;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 15px;
+    text-decoration: underline;
+}
+
+ 
+h3.item-price {
+    text-align: center;
+    font-size: 25px;
+    margin: 15px;
+    text-decoration: underline;
+    color: darkgreen ;
+    /* color */
+}
+
+.modal .modal-content img{
+    margin: auto;
+    height: 50%;  
+    width: 50%;
+    background-color: lavender;
+    margin-left: 20%;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.add ,.added{
+    border-radius:5px;
+    width: 120px;
+    height: 40px;
+    border-radius: 4px;
+    border:none;
+    background-color: #F9423D;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+    margin-left:40%;
+  }
+  .add:hover{
+    cursor:pointer;
+    background-color: rgb(89, 197, 240);
+    transition: all 0.4s ease-out;
+  }
+
+  .added{
+      background-color:silver;
+  }
+    
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 225px 60px 225px 60px 225px 60px;
+    /* grid-gap: 1px; */
+    width: 100%;
+    /* margin: auto; */
+    margin-top: 40px;
+    background-color: lavender;
+    border-radius: 10px;
+    border:4px solid blue;
+  }
+  
+  .grid>div {
+    margin-left: 24px;
+    margin-top: 20px;
+    /* width: 225px;  */
+    width:15vw;
+    border-radius: 15px;
+    
+  }
+
+ 
+ 
+
+  .grid img {
+    width: 75%;
+    height: 75%;
+    justify-self: center;
+    border-radius: 15px;
+    border: 2px solid black;
+  }
+
+  * {
+    Padding: 0;
+    margin: 0;
+  }
+ 
+  #cart-button {
+    margin-top: 8px;
+    margin-bottom: 10px;
+    /* height: 40px; */
+    /* width: 40px; */
+    height:2.67vw;
+    width:2.67vw;
+    float:right;
+    border-radius: 40px;
+    margin-right: 25px;
+  }
+
+  #cart-button img {
+  
+    height:2.67vw;
+    width:2.67vw;
+    padding: 0;
+    margin: 0;
+    border-radius: 40px;
+  }
+
+  #cart-button a {
+    text-decoration: none;
+    color: red;
+  }
+

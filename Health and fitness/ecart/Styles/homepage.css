@@ -1,0 +1,137 @@
+ 
+  .icon{
+    /* width: 40px; */
+    /* height: 40px; */
+    width:2.67vw;
+    height:2.67vw;
+    display: inline-block;
+    border-radius: 5px;
+    margin-top: 10px;
+    position: relative;
+    /* right:230px; */
+    right:15.33vw;
+    background-repeat: no-repeat;
+    /* background-size: 40px 40px; */
+    /* background-size: 2.67vw 2.67vw; */
+    background-size:contain;
+  }
+
+ 
+
+  #cart-button {
+    margin-top: 8px;
+    margin-bottom: 10px;
+    /* height: 40px; */
+    /* width: 40px; */
+    height:2.67vw;
+    width:2.67vw;
+    float:right;
+    border-radius: 40px;
+    margin-right: 25px;
+  }
+
+  #cart-button img {
+  
+    height:2.67vw;
+    width:2.67vw;
+    padding: 0;
+    margin: 0;
+    border-radius: 40px;
+  }
+
+  #cart-button a {
+    text-decoration: none;
+    color: red;
+  }
+
+ 
+  #content-wrapper{
+    /* margin-top:150px; */
+    margin-top:3.33vw;
+    /* padding-right:20px; */
+    margin-left: 20px;
+  }
+
+  .home-content{
+    overflow-wrap: break-word;
+    float:left;
+    line-height: 25.6px;
+    text-align:center;
+    /* width:490px; */
+    width:32.67%;
+  }
+
+  .content-text{
+    font-family: europa;
+    font-size:16px;
+    /* width:317px; */
+    width:21.13vw;
+    margin:auto;
+  }
+
+  .home-content img{
+    /* height:398.5px; */
+    /* width:398.5px; */
+    height:26.567vw;
+    width:26.567vw;
+    padding:17px;
+  }
+
+  .spacer{
+    clear:both;
+  }
+  
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 225px 60px 225px 60px 225px 60px;
+    /* grid-gap: 1px; */
+    width: 100%;
+    /* margin: auto; */
+    margin-top: 40px;
+    background-color: lavender;
+    border-radius: 10px;
+    border:4px solid blue;
+  }
+  
+  .grid>div {
+    margin-left: 24px;
+    margin-top: 20px;
+    /* width: 225px;  */
+    width:15vw;
+    border-radius: 15px;
+    
+  }
+
+
+  /* css for text in even row */
+  .grid .flavor-text>a {
+    font-family: 'Times New Roman', Times, serif;
+    display: block;
+    width: 100%;
+    font-size: 25px;
+    /* font-weight: bold; */
+    text-align: center;
+    text-decoration-line: none;
+    text-transform: capitalize;
+    color: #af0446;
+    font-weight: 200px ;
+  
+  }
+
+ 
+
+  .grid img {
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+    border-radius: 15px;
+    border: 2px solid black;
+  }
+
+  * {
+    Padding: 0;
+    margin: 0;
+  }
+ 

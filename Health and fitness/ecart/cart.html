@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="posters/logo.png" type="image/icon type">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <link rel="stylesheet" href="Styles/cart.css">
+ 
+
+</head>
+
+<body>
+ 
+
+  <h1>Your cart items:</h1>
+
+  <ul>
+    <li>
+      <h2><span class="name">Choc Caramel Brownie</span>
+        <div class="right">
+          <button type = "button" class="decrease" onClick="changeByAmount(-1)">-</button>
+          <span class="amount">4</span>
+          <button class="increase" onClick="changeByAmount(1)">+</button>
+          <span class="price">20$</span>
+          <button class="cross" onClick="changeByAmount(0)">X</button></div>
+      </h2>
+    </li>
+
+  </ul>
+  <div id="total-bar">
+    <button><a href="homepage.html"> BUY NOW </a></button>
+    TOTAL: <span id="total-amount">1212/-</span>
+
+  </div>
+
+  
+
+  <script>
+    let e;
+    let t;
+    container = document.getElementsByTagName("ul")[0];
+
+    function load() {
+      container.innerHTML = '';
+      total = 0;
+      for (let itemName of Object.keys(sessionStorage)) {
+        if (itemName == "IsThisFirstTime_Log_From_LiveServer") continue;
+        itemData = JSON.parse(sessionStorage.getItem(itemName));
+        amount = itemData.amount;
+        cost = itemData.cost;
+        url = itemData.url;
+        elem = document.createElement("li");
+        elem.innerHTML = ` <h2 style="background: url('images/${url}') no-repeat;background-size:contain;background-position:15px 0px;"><span class="name">${itemName}</span><div class="right">
+                <button class="decrease" onClick="changeByAmount(-1)">-</button>
+                <span class="amount">${amount}</span>
+                <button class="increase" onClick="changeByAmount(1)">+</button>
+                <span class="price">${cost}</span>
+            <button class="cross" onClick="changeByAmount(0)">X</button></div></h2>
+            `
+        container.appendChild(elem);
+        total += Number(cost.slice(2, -2)) * amount;
+      }
+      totalAmount = document.getElementById("total-amount");
+      totalAmount.innerText = total + "$";
+    }
+
+    function changeByAmount(n) {
+      // n is relative change in amount,if 0 means we are to remove item
+      itemName = event.target.parentElement.parentElement.getElementsByClassName("name")[0].innerText;
+      itemData = JSON.parse(sessionStorage.getItem(itemName));
+      if (itemData.amount + n > 0)
+        itemData.amount += n;
+      if (n == 0)
+        sessionStorage.removeItem(itemName);
+      else
+        sessionStorage.setItem(itemName, JSON.stringify(itemData));
+      load();
+    }
+    load();
+  </script>
+</body>
+</html>
